@@ -30,12 +30,30 @@ void PriorityBoarding() {
                 cout << "Restarting Priority Boarding process...\n";
             }
         }
+        
+    cout << " Priority Boarding Complete \n";
     
 }
 
 // All Passengers Aboard
 void AllPassengersAboard() {
-   
+   cout << "\n--- All Passengers Aboard Check ---\n";
+
+    cout << "5 minutes before gate closes...\n";
+    this_thread::sleep_for(chrono::seconds(2)); // simulate waiting
+
+    bool allAboard = false;
+    cout << "Are all passengers aboard? (1 = Yes, 0 = No): ";
+    cin >> allAboard;
+
+    if (allAboard) {
+        cout << "All passengers aboard. Proceeding to Termination.\n";
+    } else {
+        cout << "Announcement: Final call, please board the plane!\n";
+        cout << "Waiting extra 5 minutes...\n";
+        this_thread::sleep_for(chrono::seconds(2)); // simulate 5 mins
+        cout << "Proceeding to Termination anyway.\n";
+    }
 }
 
 int main() {
