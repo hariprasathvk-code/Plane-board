@@ -30,14 +30,14 @@ void PriorityBoarding() {
                 cout << "Restarting Priority Boarding process...\n";
             }
         }
-        
+    }
+
     cout << " Priority Boarding Complete \n";
-    
 }
 
 // All Passengers Aboard
 void AllPassengersAboard() {
-   cout << "\n--- All Passengers Aboard Check ---\n";
+    cout << "\n--- All Passengers Aboard Check ---\n";
 
     cout << "5 minutes before gate closes...\n";
     this_thread::sleep_for(chrono::seconds(2)); // simulate waiting
