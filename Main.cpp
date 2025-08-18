@@ -4,6 +4,9 @@
 
 using namespace std;
 
+void initialization(){
+    cout << " Flight Boarding Simulation \n";
+}
 // Priority Boarding Process
 void PriorityBoarding() {
     cout << "\n Priority Boarding Started \n";
@@ -56,8 +59,12 @@ void AllPassengersAboard() {
     }
 }
 
+void termination(){
+    cout << "\n Closing gate.\n";
+}
+
 int main() {
-    cout << " Flight Boarding Simulation \n";
+    initialization();
     cout << "\n Plane arrived at gate.\n";
 
     // Priority Boarding (PB)
@@ -66,8 +73,7 @@ int main() {
     // All Passengers Aboard (APA)
     AllPassengersAboard();
 
-    // Termination (T)
-    cout << "\nTermination: Closing gate.\n";
+    termination();// Termination 
 
     cout << " Process Completed. Plane Ready to Depart. \n";
     return 0;
