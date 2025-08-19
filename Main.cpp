@@ -67,13 +67,10 @@ int main() {
     initialization();
     cout << "\n Plane arrived at gate.\n";
 
-    // Priority Boarding (PB)
     PriorityBoarding();
-
-    // All Passengers Aboard (APA)
     AllPassengersAboard();
 
-    termination();// Termination 
+    termination();
 
     cout << " Process Completed. Plane Ready to Depart. \n";
     return 0;
